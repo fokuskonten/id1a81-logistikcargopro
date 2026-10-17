@@ -1,8 +1,15 @@
 *.zip
+**/*.zip
 *.tar.gz
+**/*.tar.gz
 *.rar
+**/*.rar
 *.exe
+**/*.exe
 *.msi
+**/*.msi
+*.iso
+**/*.iso
 .DS_Store
 Thumbs.db
 node_modules/
