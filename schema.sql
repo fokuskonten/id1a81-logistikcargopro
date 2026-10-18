@@ -47,3 +47,28 @@ CREATE TABLE IF NOT EXISTS kargo_pecah_belah (
     biaya_asuransi_wajib DECIMAL(15,2) NOT NULL,
     FOREIGN KEY (id_resi) REFERENCES kargo(id_resi) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ========================================================
+-- DATA AWAL SIMULASI OPERASIONAL (FOKUSKONTEN OFFICIAL SEED)
+-- ========================================================
+INSERT IGNORE INTO kargo (id_resi, pengirim, kota_tujuan, berat_barang, tarif_dasar_per_kg, jenis_kargo, total_tarif, status_packing, tanggal_reservasi) VALUES
+('RESI-REG-001', 'PT Jaya Mandiri Logistik', 'Surabaya', 150.00, 4500.00, 'Reguler', 675000.00, 'TERPENUHI', '2026-10-15 09:30:00'),
+('RESI-REG-002', 'CV Berkah Sentosa', 'Semarang', 85.00, 5000.00, 'Reguler', 425000.00, 'TERPENUHI', '2026-10-16 11:15:00'),
+('RESI-KIM-001', 'PT Petro Multi Kimia', 'Cilegon', 500.00, 8000.00, 'BahanKimia', 4800000.00, 'TERPENUHI', '2026-10-17 14:00:00'),
+('RESI-KIM-002', 'CV Indo Chem Prima', 'Bandung', 250.00, 8500.00, 'BahanKimia', 2450000.00, 'TERPENUHI', '2026-10-17 16:45:00'),
+('RESI-PCB-001', 'CV Surya Pratama Keramik', 'Yogyakarta', 120.00, 6000.00, 'PecahBelah', 920000.00, 'TERPENUHI', '2026-10-18 08:20:00'),
+('RESI-PCB-002', 'UD Maju Kaca Perkasa', 'Malang', 340.00, 6500.00, 'PecahBelah', 2510000.00, 'TERPENUHI', '2026-10-18 10:30:00'),
+('RESI-REG-003', 'Toko Elektronik Nusantara', 'Medan', 210.00, 12000.00, 'Reguler', 2520000.00, 'TERPENUHI', '2026-10-18 13:00:00');
+
+INSERT IGNORE INTO kargo_reguler (id_resi, jenis_paket, estimasi_hari) VALUES
+('RESI-REG-001', 'Dus', 2),
+('RESI-REG-002', 'Koli', 3),
+('RESI-REG-003', 'Dus', 4);
+
+INSERT IGNORE INTO kargo_bahan_kimia (id_resi, tingkat_bahaya, jenis_sertifikasi_sandi) VALUES
+('RESI-KIM-001', 3, 'MSDS-CERT-88912-B'),
+('RESI-KIM-002', 2, 'MSDS-CERT-44109-A');
+
+INSERT IGNORE INTO kargo_pecah_belah (id_resi, ketebalan_bubble_wrap, biaya_asuransi_wajib) VALUES
+('RESI-PCB-001', 3, 200000.00),
+('RESI-PCB-002', 5, 300000.00);

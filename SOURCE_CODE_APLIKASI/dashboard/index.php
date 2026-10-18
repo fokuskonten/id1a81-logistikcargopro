@@ -72,10 +72,13 @@ $hPecah = ($revPecah / $maxRev) * 120;
 <html lang="id">
 <head>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="favicon-192x192.png">
+    <link rel="manifest" href="manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Cargo Management</title>
+    <title>Dashboard Utama — LogistikCargoPro</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 
 <!-- FK-GEMINI-THEME -->
@@ -308,6 +311,10 @@ body {
                     </table>
                 </div>
             </div>
+
+            <footer style="margin-top: 40px; padding: 20px 0; text-align: center; border-top: 1px solid #e2e8f0; font-size: 13px; color: #64748b;">
+                LogistikCargoPro &mdash; Sistem Ekspedisi Muatan Truk & Kubikasi &bull; Powered by <a href="https://fokuskonten.my.id" target="_blank" style="color: #2563eb; font-weight: 600; text-decoration: none;">FokusKonten</a>
+            </footer>
 
         </div>
     </main>
