@@ -10,8 +10,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <div class="navbar-container">
         <div class="navbar-left">
             <a href="index.php" class="navbar-logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
-                <img src="../logo.svg" onerror="this.onerror=null; this.src='../logo.png';" alt="LogistikCargoPro" style="height: 38px; width: 38px; border-radius: 50%; object-fit: cover; display: inline-block; box-shadow: 0 2px 8px rgba(37,99,235,0.25);">
-                <span class="logo-text" style="font-weight: 700; font-size: 18px; color: #1e3a8a; letter-spacing: -0.3px;">LogistikCargoPro</span>
+                <img src="../logo.svg" onerror="this.onerror=null; this.src='../logo.png';" alt="LogistikCargoPro" style="height: 32px; width: 32px; border-radius: 50%; object-fit: cover; display: inline-block; box-shadow: 0 2px 6px rgba(37,99,235,0.2);">
+                <span class="logo-text" style="font-weight: 700; font-size: 15.5px; color: #1e3a8a; letter-spacing: -0.3px; white-space: nowrap;">LogistikCargoPro</span>
             </a>
         </div>
         <div class="navbar-right">
